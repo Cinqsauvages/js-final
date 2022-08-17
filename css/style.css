@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@100;300&display=swap');
+
+* {
+    margin: 0;
+}
+
+.body {
+    display: grid;
+    grid-template-areas:
+        "encabezado""encabezado"
+        "main""main"
+        "footer""footer"
+    ;
+    background-color: black;
+    align-items: center;
+    margin: 1%;
+}
+
+#encabezado {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: double white 10px;
+    align-items: center;
+    grid-area: encabezado;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+.main {
+    grid-area: main;
+    margin: 5%;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.targeta {
+    margin: 10px;
+    height: 360px;
+    width: 310px;
+    border: white solid 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: white 3px 2px;
+    border-radius: 10px;
+}
+
+.targeta .imagen-producto {
+    width: 250px;
+    height: 270px;
+}
+
+.targeta h2 {
+    color: #734b6d;
+}
+
+.targeta h3 {
+    color: grey;
+    font-size: 16px;
+}
+
+.carrito-modal {
+    display: none;
+}
+
+.carrito-modal.open {
+    display: block;
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    border: white 2px solid;
+    position: fixed;
+    right: 10px;
+    overflow-y: auto;
+    border-radius: 10px;
+    border: 5px solid #734b6d;
+
+
+}
+
+
+.contenido-modal {
+    display: grid;
+    
+    grid-template-areas: 
+        "btnCerrar" "btnCerrar" "btnCerrar"
+        "title" "title" "title"
+        "productos" "productos" "productos"
+        "precio" "precio" "precio"
+    ;
+    gap: 15px;
+}
+
+.contenido-modal .cerrar {
+    grid-area: btnCerrar;
+    display: flex;
+    justify-content: end;
+}
+.title {
+    grid-area: title;
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+#productos-modal {
+    grid-area: productos;
+    display: flex;
+    flex-direction: column;
+    margin:3px;
+    border: 2px solid purple;
+}
+
+
+
+.lista-carrito {
+   display: grid;
+   grid-template-columns: repeat(2, 0.5fr);
+   gap:1px;
+   border: 1px solid purple;
+   align-items: center;
+}
+
+.nombre-modal{
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+.precio-modal{
+    grid-column: 2/4;
+    grid-row: 1/4;
+}
+.cantidad-modal{
+    grid-column: 3/4;
+    grid-row: 1/4;
+}
+.borrar{
+    grid-column: 4/4;
+    grid-row: 1/4;
+}
+
+#precio-final{
+    grid-area: precio;
+    display: flex;
+    justify-content: center;
+    gap:15px;
+    align-items: center;
+}
+
+
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 5px ridge white;
+    grid-area: footer;
+    
+}
+.ingreso{
+    margin-top: 1%;
+}
+.lista li {
+    color: white;
+    font-size: bold;
+    list-style: none;
+}
+
+.redes {
+    margin-top:50px;
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    box-shadow: 2px 2px white;
+    border:white 2px solid;   
+    border-radius: 25px;
+    grid-area: redes;
+
+}
+
+#btn-borrar{
+    margin-left: 5px;
+}

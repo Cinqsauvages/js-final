@@ -1,0 +1,34 @@
+[
+    {
+        "nombre": "top-1",
+        "precio": 5000,
+        "imagen": "./fotos/top1.jpg",
+        "id": 1
+    },
+    {
+        "nombre": "conjunto1",
+        "precio": 6500,
+        "imagen": "./fotos/conjunto1.jpg",
+        "id": 2
+    },
+    {
+        "nombre": "conjunto2",
+        "precio": 7000,
+        "imagen": "./fotos/conjunto2.jpg",
+        "id": 3
+    },
+    {
+        "nombre": "conjunto3",
+        "precio": 9000,
+        "imagen": "./fotos/conjunto3.jpg",
+        "id": 4
+    },
+    {
+        "nombre": "calza1",
+        "precio": 2500,
+        "id": 5,
+        "imagen": "./fotos/calza1.jpg"
+       
+    }
+
+]
