@@ -75,7 +75,18 @@ const datosCards = (data) => {
 }
 
 cards.addEventListener('click', e => {
-    agregarCarrito(e)
+    
+    agregarCarrito(e);
+    Toastify({
+
+        text: "Producto Agregado",
+
+        duration: 3000,
+        style: {
+            background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,96,1) 34%, rgba(4,131,181,1) 91%, rgba(0,212,255,1) 100%)",
+        }
+
+    }).showToast();
 })
 
 function agregarCarrito(e) {
