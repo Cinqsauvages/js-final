@@ -166,5 +166,7 @@ function limpiezaTotal() {
     carrito = {};
     crearCarrito();
 
+    alertify.alert('Tu compra ha sido finalizada. Muchas Gracias!')
+
 
 }
